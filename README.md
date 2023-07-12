@@ -158,7 +158,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add more queries**
+- [x] **Add more queries**
 - [ ] **Add more tables**
 - [ ] **Add more functions**
 
