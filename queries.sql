@@ -132,3 +132,10 @@ SELECT v.name, s.name AS specialty
 FROM vets v
 LEFT JOIN specializations sp ON v.id = sp.vet_id
 LEFT JOIN species s ON s.id = sp.species_id;
+
+--List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+SELECT a.name
+FROM animals a
+JOIN visits v ON a.id = v.animal_id
+JOIN vets vt ON vt.id = v.vet_id
+WHERE vt.name = 'Stephanie Mendez' AND v.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
