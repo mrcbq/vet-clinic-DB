@@ -40,11 +40,6 @@ CREATE TABLE vets (
   date_of_graduation DATE NOT NULL
 );
 
-CREATE TABLE species (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(255) NOT NULL
-);
-
 CREATE TABLE specializations (
   vet_id INTEGER NOT NULL,
   species_id INTEGER NOT NULL,
