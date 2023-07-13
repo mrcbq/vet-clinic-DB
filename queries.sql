@@ -126,3 +126,9 @@ FROM animals a
 JOIN visits v ON a.id = v.animal_id
 JOIN vets vt ON vt.id = v.vet_id
 WHERE vt.name = 'Stephanie Mendez';
+
+--List all vets and their specialties, including vets with no specialties.
+SELECT v.name, s.name AS specialty
+FROM vets v
+LEFT JOIN specializations sp ON v.id = sp.vet_id
+LEFT JOIN species s ON s.id = sp.species_id;
