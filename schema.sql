@@ -52,3 +52,12 @@ CREATE TABLE specializations (
   FOREIGN KEY (vet_id) REFERENCES vets (id),
   FOREIGN KEY (species_id) REFERENCES species (id)
 );
+
+CREATE TABLE visits (
+  animal_id INTEGER NOT NULL,
+  vet_id INTEGER NOT NULL,
+  visit_date DATE NOT NULL,
+  FOREIGN KEY (animal_id) REFERENCES animals (id),
+  FOREIGN KEY (vet_id) REFERENCES vets (id)
+);
+
