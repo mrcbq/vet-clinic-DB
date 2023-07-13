@@ -38,8 +38,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <!-- <details>
   <summary>Client</summary>
   <ul>
@@ -63,17 +61,15 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[Create vet DB]**
-- **[Add animals table]**
-- **[Add some useful queries]**
+- **Create vet DB**
+- **Add animals table**
+- **Add some useful queries**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming Soon.
+Coming Soon.
 <!-- 
 - [Live Demo Link](<replace-with-your-deployment-URL>) -->
 
@@ -101,7 +97,6 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone git@github.com:mrcbq/vet-clinic-DB.git
 ```
--
 
 ### Install
 
@@ -163,9 +158,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add more queries]**
-- [ ] **[Add more tables]**
-- [ ] **[Add more functions]**
+- [x] **Add more queries**
+- [ ] **Add more tables**
+- [ ] **Add more functions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
