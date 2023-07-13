@@ -44,3 +44,11 @@ CREATE TABLE species (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE specializations (
+  vet_id INTEGER NOT NULL,
+  species_id INTEGER NOT NULL,
+  PRIMARY KEY (vet_id, species_id),
+  FOREIGN KEY (vet_id) REFERENCES vets (id),
+  FOREIGN KEY (species_id) REFERENCES species (id)
+);
