@@ -37,3 +37,10 @@ INSERT INTO species (name)
 VALUES
   ('Pokemon'),
   ('Digimon');
+
+  -- Set species_id based on animal name
+UPDATE animals
+SET species_id = CASE
+  WHEN name LIKE '%mon' THEN (SELECT id FROM species WHERE name = 'Digimon')
+  ELSE (SELECT id FROM species WHERE name = 'Pokemon')
+END;
