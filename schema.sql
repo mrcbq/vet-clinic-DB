@@ -39,3 +39,8 @@ CREATE TABLE vets (
   age INTEGER NOT NULL,
   date_of_graduation DATE NOT NULL
 );
+
+CREATE TABLE species (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL
+);
