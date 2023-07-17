@@ -183,3 +183,5 @@ WHERE vt.name = 'Maisy Smith'
 GROUP BY s.name
 ORDER BY num_visits DESC
 LIMIT 1;
+
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4
